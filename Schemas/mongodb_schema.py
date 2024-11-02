@@ -18,8 +18,9 @@ users_collection = db['Users']
 usage_stats_collection = db['Usage_Stats']
 
 
+# Loop and insert user data into Users collection
 for _, row in dataset.iterrows():
-    # Insert user data into Users collection
+
     user_document = {
         "_id": row['User ID'],
         "age": row['Age'],
