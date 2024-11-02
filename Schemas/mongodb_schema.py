@@ -33,7 +33,7 @@ for _, row in dataset.iterrows():
 
     users_collection.insert_one(user_document)
     
-    usage_stats_document = {
+    app_usage_stats_document = {
         "user_id": row['User ID'],
         "app_usage_time": row['App Usage Time (min/day)'],
         "screen_on_time": row['Screen On Time (hours/day)'],
@@ -43,4 +43,4 @@ for _, row in dataset.iterrows():
         "behavior_class": row['User Behavior Class']
     }
 
-    usage_stats_collection.insert_one(usage_stats_document)
+    usage_stats_collection.insert_one(app_usage_stats_document)
