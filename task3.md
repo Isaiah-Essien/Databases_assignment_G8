@@ -10,3 +10,8 @@ This project implements a RESTful API with CRUD (Create, Read, Update, Delete) o
 - **Uvicorn**: Lightning-fast ASGI server
 - **SQLite/PostgreSQL**: Database backend
 - **Python**: Version 3.7+
+
+
+## URL to play with Endpoints
+
+[API Endpoints](https://crudendpoints.onrender.com/docs)
