@@ -222,44 +222,20 @@ def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
         logger.error(f"Error retrieving users: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Error retrieving users: {str(e)}")
 
-# Update (PUT)
-@app.put("/users/{user_id}", response_model=UserDetail)
-def update_user(user_id: int, user: UserCreate, db: Session = Depends(get_db)):
-    db_user = db.query(User).filter(User.user_id == user_id).first()
-    if db_user is None:
-        raise HTTPException(status_code=404, detail="User not found")
-
-    # Update user data
-    db_user.age = user.age
-    db_user.gender = user.gender
-    db_user.user_behavior = user.user_behavior
-
-    # Update device information
-    db_device_info = db.query(DeviceInformation).filter(DeviceInformation.user_id == user_id).first()
-    if db_device_info:
-        db_device_info.device_model = user.device_info.device_model
-        db_device_info.operating_system = user.device_info.operating_system
-
-    # Update app usage stats
-    db_app_usage_stats = db.query(AppUsageStats).filter(AppUsageStats.user_id == user_id).first()
-    if db_app_usage_stats:
-        db_app_usage_stats.app_usage_time = user.app_usage_stats.app_usage_time
-        db_app_usage_stats.screen_on_time = user.app_usage_stats.screen_on_time
-        db_app_usage_stats.battery_drain = user.app_usage_stats.battery_drain
-        db_app_usage_stats.apps_installed = user.app_usage_stats.apps_installed
-        db_app_usage_stats.data_usage = user.app_usage_stats.data_usage
-        db_app_usage_stats.behavior_class = user.app_usage_stats.behavior_class
-
-    db.commit()
-    db.refresh(db_user)
-    return db_user
-
-# Delete (DELETE)
-@app.delete("/users/{user_id}")
-def delete_user(user_id: int, db: Session = Depends(get_db)):
-    user = db.query(User).filter(User.user_id == user_id).first()
-    if not user:
-        raise HTTPException(status_code=404, detail="User not found")
-    db.delete(user)
-    db.commit()
-    return {"message": "User and associated records deleted successfully"}
+# Simple endpoint to test database connection
+@app.get("/health")
+async def health_check():
+    try:
+        # Test database connection
+        with engine.connect() as conn:
+            result = conn.execute("SELECT 1").scalar()
+            tables = inspect(engine).get_table_names()
+            
+        return {
+            "status": "healthy",
+            "database_connection": "successful",
+            "tables": tables
+        }
+    except Exception as e:
+        logger.error(f"Health check failed: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Database connection failed: {str(e)}")
