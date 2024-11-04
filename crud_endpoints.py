@@ -40,3 +40,36 @@ class AppUsageStats(Base):
     data_usage = Column(Integer)
     behavior_class = Column(Integer)
     user = relationship("User", back_populates="app_usage_stats")
+
+User.device_info = relationship("DeviceInformation", uselist=False, back_populates="user")
+User.app_usage_stats = relationship("AppUsageStats", uselist=False, back_populates="user")
+
+# Create tables in the database
+Base.metadata.create_all(bind=engine)
+
+# Pydantic Models
+class DeviceInfo(BaseModel):
+    device_model: str
+    operating_system: str
+
+class AppUsageStatsModel(BaseModel):
+    app_usage_time: int
+    screen_on_time: float
+    battery_drain: int
+    apps_installed: int
+    data_usage: int
+    behavior_class: int
+
+class UserCreate(BaseModel):
+    age: int
+    gender: str
+    user_behavior: str
+    device_info: DeviceInfo
+    app_usage_stats: AppUsageStatsModel
+
+class UserDetail(UserCreate):
+    user_id: int
+    device_info: DeviceInfo
+    app_usage_stats: AppUsageStatsModel
+    class Config:
+        orm_mode = True
