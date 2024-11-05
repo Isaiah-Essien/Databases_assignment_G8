@@ -1,4 +1,4 @@
-# Task 2: MongoDB Schema and Data Ingestion
+# Task 2: SQL and MongoDB Schema
 
 ## Overview
 This task involves creating an SQL and MongoDB schemas and ingesting user behavior data from a CSV file into SQL database. The dataset contains user information and their app usage statistics, which are stored in two separate tables. For MongoDB, only the schema was created.
