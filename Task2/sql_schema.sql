@@ -1,7 +1,7 @@
 
 -- Create the table for the Users
 CREATE TABLE Users (
-    user_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT PRIMARY KEY,
     age INT,
     gender VARCHAR(20),
     user_behavior VARCHAR(20),
@@ -12,7 +12,9 @@ CREATE TABLE Device_Information (
     device_id SERIAL PRIMARY KEY,
     user_id INT REFERENCES Users(user_id),
     device_model VARCHAR(50),
-    operating_system VARCHAR(20)
+    operating_system VARCHAR(20),
+    FOREIGN KEY (user_id),
+    REFERENCES Users(user_id)
 );
 
 -- Create the table for the App Usage Stats
@@ -24,5 +26,7 @@ CREATE TABLE App_Usage_Stats (
     battery_drain INT,
     apps_installed INT,
     data_usage INT,
-    behavior_class INT
+    behavior_class INT,
+    FOREIGN KEY (user_id),
+    REFERENCES Users(user_id)
 );
