@@ -3,6 +3,7 @@ from pydantic import BaseModel, ConfigDict
 from sqlalchemy import create_engine, Column, Integer, String, Float, ForeignKey, inspect
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship, Session
+from sqlalchemy import func 
 import logging
 
 # Set up logging
@@ -121,26 +122,33 @@ def get_db():
 @app.post("/users/", response_model=UserDetail)
 def create_user(user: UserCreate, db: Session = Depends(get_db)):
     try:
-        logger.info(f"Creating new user with data: {user.dict()}")
-        
-        # Create user
-        db_user = User(age=user.age, gender=user.gender, user_behavior=user.user_behavior)
-        db.add(db_user)
-        db.flush()  # Flush to get the user_id
-        logger.info(f"Created user with ID: {db_user.user_id}")
+        # Find the current maximum user_id in the database
+        max_user_id = db.query(func.max(User.user_id)).scalar()  # Get the highest user_id or None
+        new_user_id = (max_user_id or 0) + 1  # Start at 1 if max_user_id is None
 
-        # Create device info
+        logger.info(f"Creating new user with ID: {new_user_id}")
+
+        # Create the new user with the incremented user_id
+        db_user = User(
+            user_id=new_user_id,
+            age=user.age,
+            gender=user.gender,
+            user_behavior=user.user_behavior
+        )
+        db.add(db_user)
+        db.flush()  # Flush to update the session with new user data
+
+        # Add device information
         device_info = DeviceInformation(
-            user_id=db_user.user_id,
+            user_id=new_user_id,
             device_model=user.device_info.device_model,
             operating_system=user.device_info.operating_system
         )
         db.add(device_info)
-        logger.info("Added device information")
 
-        # Create app usage stats
+        # Add app usage stats
         app_usage_stats = AppUsageStats(
-            user_id=db_user.user_id,
+            user_id=new_user_id,
             app_usage_time=user.app_usage_stats.app_usage_time,
             screen_on_time=user.app_usage_stats.screen_on_time,
             battery_drain=user.app_usage_stats.battery_drain,
@@ -149,29 +157,44 @@ def create_user(user: UserCreate, db: Session = Depends(get_db)):
             behavior_class=user.app_usage_stats.behavior_class
         )
         db.add(app_usage_stats)
-        logger.info("Added app usage stats")
 
-        # Commit all changes
+        # Commit the transaction
         db.commit()
-        logger.info("Committed all changes to database")
-        
-        # Refresh user to load relationships
         db.refresh(db_user)
-        
-        # Verify the data was saved
-        created_user = (
-            db.query(User)
-            .filter(User.user_id == db_user.user_id)
-            .first()
-        )
-        logger.info(f"Retrieved created user: {created_user.user_id if created_user else 'Not found'}")
-        
-        return created_user
+        logger.info("User created successfully with incremented user_id")
+
+        return db_user
 
     except Exception as e:
         db.rollback()
         logger.error(f"Error creating user: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Error creating user: {str(e)}")
+
+# Get the latest user
+@app.get("/users/latest", response_model=UserDetail)
+def get_latest_user(db: Session = Depends(get_db)):
+    try:
+        logger.info("Attempting to retrieve the latest user")
+        
+        # Query the latest user by sorting by user_id in descending order
+        latest_user = (
+            db.query(User)
+            .outerjoin(DeviceInformation)
+            .outerjoin(AppUsageStats)
+            .order_by(User.user_id.desc())
+            .first()
+        )
+        
+        if not latest_user:
+            logger.warning("No users found in the database")
+            raise HTTPException(status_code=404, detail="No users found")
+            
+        logger.info(f"Successfully retrieved the latest user with ID: {latest_user.user_id}")
+        return latest_user
+        
+    except Exception as e:
+        logger.error(f"Error retrieving the latest user: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error retrieving the latest user: {str(e)}")
 
 # Read (GET)
 @app.get("/users/{user_id}", response_model=UserDetail)
@@ -263,3 +286,6 @@ def delete_user(user_id: int, db: Session = Depends(get_db)):
     db.delete(user)
     db.commit()
     return {"message": "User and associated records deleted successfully"}
+
+
+
