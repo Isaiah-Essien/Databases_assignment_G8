@@ -1,10 +1,10 @@
-User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (hours/day),Battery Drain (mAh/day),Number of Apps Installed,Data Usage (MB/day),Age,Gender,User Behavior Class
+User ID,Device Model,Operating System,App Usage Time min/day,Screen On Time hours/day,Battery Drain mAh/day,Number of Apps Installed,Data Usage MB/day,Age,Gender,User Behavior Class
 1,Google Pixel 5,Android,393,6.4,1872,67,1122,40,Male,4
 2,OnePlus 9,Android,268,4.7,1331,42,944,47,Female,3
-3,Xiaomi Mi 11,Android,154,4.0,761,32,322,42,Male,2
+3,Xiaomi Mi 11,Android,154,4,761,32,322,42,Male,2
 4,Google Pixel 5,Android,239,4.8,1676,56,871,20,Male,3
 5,iPhone 12,iOS,187,4.3,1367,58,988,31,Female,3
-6,Google Pixel 5,Android,99,2.0,940,35,564,31,Male,2
+6,Google Pixel 5,Android,99,2,940,35,564,31,Male,2
 7,Samsung Galaxy S21,Android,350,7.3,1802,66,1054,21,Female,4
 8,OnePlus 9,Android,543,11.4,2956,82,1702,31,Male,5
 9,Samsung Galaxy S21,Android,340,7.7,2138,75,1053,42,Female,4
@@ -23,16 +23,16 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 22,OnePlus 9,Android,576,11.6,2803,82,1553,43,Female,5
 23,Samsung Galaxy S21,Android,423,6.5,2094,65,1372,23,Female,4
 24,Google Pixel 5,Android,292,5.6,1401,46,949,37,Female,3
-25,OnePlus 9,Android,216,4.0,1711,59,748,58,Male,3
+25,OnePlus 9,Android,216,4,1711,59,748,58,Male,3
 26,Samsung Galaxy S21,Android,91,3.4,1073,38,451,52,Male,2
 27,iPhone 12,iOS,444,7.6,2372,77,1002,29,Male,4
 28,Google Pixel 5,Android,512,10.5,2409,89,1599,33,Male,5
 29,OnePlus 9,Android,452,6.8,2387,77,1456,55,Female,4
 30,Samsung Galaxy S21,Android,412,6.2,1899,78,1384,19,Female,4
-31,Xiaomi Mi 11,Android,260,6.0,1361,44,889,37,Female,3
+31,Xiaomi Mi 11,Android,260,6,1361,44,889,37,Female,3
 32,Xiaomi Mi 11,Android,197,4.6,1660,59,975,25,Male,3
 33,Google Pixel 5,Android,278,4.7,1484,55,917,21,Male,3
-34,Google Pixel 5,Android,46,2.0,457,14,105,58,Male,1
+34,Google Pixel 5,Android,46,2,457,14,105,58,Male,1
 35,Xiaomi Mi 11,Android,593,10.2,2499,81,1616,38,Female,5
 36,Samsung Galaxy S21,Android,32,1.2,580,19,153,20,Female,1
 37,iPhone 12,iOS,122,3.3,755,30,573,26,Male,2
@@ -57,25 +57,25 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 56,iPhone 12,iOS,68,1.6,450,14,111,30,Male,1
 57,OnePlus 9,Android,64,1.1,572,10,161,42,Female,1
 58,OnePlus 9,Android,539,8.4,2796,89,2415,26,Male,5
-59,Xiaomi Mi 11,Android,428,7.0,2306,75,1144,22,Male,4
+59,Xiaomi Mi 11,Android,428,7,2306,75,1144,22,Male,4
 60,iPhone 12,iOS,325,7.1,2269,64,1053,56,Male,4
 61,Xiaomi Mi 11,Android,522,11.9,2798,85,1663,28,Female,5
 62,Xiaomi Mi 11,Android,309,7.5,2292,77,1253,57,Female,4
 63,Xiaomi Mi 11,Android,79,1.9,493,14,128,55,Male,1
 64,Xiaomi Mi 11,Android,545,11.5,2911,87,1717,21,Female,5
-65,Samsung Galaxy S21,Android,459,7.0,1982,67,1091,43,Male,4
-66,iPhone 12,iOS,225,4.0,1420,48,917,56,Male,3
+65,Samsung Galaxy S21,Android,459,7,1982,67,1091,43,Male,4
+66,iPhone 12,iOS,225,4,1420,48,917,56,Male,3
 67,iPhone 12,iOS,257,4.5,1705,57,912,55,Male,3
-68,Xiaomi Mi 11,Android,134,4.0,773,35,449,28,Female,2
+68,Xiaomi Mi 11,Android,134,4,773,35,449,28,Female,2
 69,iPhone 12,iOS,516,10.2,2932,98,1547,31,Male,5
 70,Google Pixel 5,Android,82,1.7,558,16,284,29,Female,1
 71,Samsung Galaxy S21,Android,452,7.2,1808,64,1090,45,Female,4
-72,iPhone 12,iOS,521,9.0,2902,97,1701,37,Male,5
+72,iPhone 12,iOS,521,9,2902,97,1701,37,Male,5
 73,Google Pixel 5,Android,457,6.3,2347,66,1082,22,Male,4
 74,Xiaomi Mi 11,Android,31,1.1,585,11,208,50,Female,1
-75,iPhone 12,iOS,47,2.0,476,14,125,39,Male,1
+75,iPhone 12,iOS,47,2,476,14,125,39,Male,1
 76,Xiaomi Mi 11,Android,229,5.7,1305,43,985,23,Female,3
-77,Xiaomi Mi 11,Android,34,2.0,558,14,122,54,Female,1
+77,Xiaomi Mi 11,Android,34,2,558,14,122,54,Female,1
 78,Google Pixel 5,Android,173,2.5,678,29,301,30,Female,2
 79,Samsung Galaxy S21,Android,78,1.8,333,17,138,51,Female,1
 80,Google Pixel 5,Android,230,5.7,1254,52,989,34,Female,3
@@ -96,7 +96,7 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 95,Samsung Galaxy S21,Android,411,7.5,2169,72,1083,58,Male,4
 96,Xiaomi Mi 11,Android,326,7.2,2243,73,1454,50,Male,4
 97,iPhone 12,iOS,550,9.5,2916,91,1946,20,Male,5
-98,OnePlus 9,Android,516,12.0,2406,82,1968,28,Female,5
+98,OnePlus 9,Android,516,12,2406,82,1968,28,Female,5
 99,Google Pixel 5,Android,59,1.2,361,18,293,25,Female,1
 100,OnePlus 9,Android,225,5.5,1526,44,875,50,Female,3
 101,Google Pixel 5,Android,41,1.1,389,15,136,53,Male,1
@@ -108,7 +108,7 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 107,Google Pixel 5,Android,152,2.7,642,38,596,55,Male,2
 108,Google Pixel 5,Android,54,1.4,403,17,278,23,Female,1
 109,Xiaomi Mi 11,Android,187,5.5,1754,55,711,50,Female,3
-110,OnePlus 9,Android,216,6.0,1641,41,889,39,Female,3
+110,OnePlus 9,Android,216,6,1641,41,889,39,Female,3
 111,OnePlus 9,Android,95,3.8,718,26,459,41,Female,2
 112,Xiaomi Mi 11,Android,488,8.6,2447,84,2344,19,Male,5
 113,Google Pixel 5,Android,295,5.1,1483,45,748,27,Female,3
@@ -121,7 +121,7 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 120,Google Pixel 5,Android,97,2.7,1018,37,428,41,Male,2
 121,Samsung Galaxy S21,Android,388,6.6,2085,71,1150,45,Female,4
 122,OnePlus 9,Android,529,8.7,2484,89,2189,39,Female,5
-123,Google Pixel 5,Android,584,10.0,2541,99,2391,49,Female,5
+123,Google Pixel 5,Android,584,10,2541,99,2391,49,Female,5
 124,Google Pixel 5,Android,529,8.1,2686,96,1924,35,Male,5
 125,Google Pixel 5,Android,227,5.1,1702,57,714,21,Male,3
 126,Samsung Galaxy S21,Android,535,11.8,2858,99,2378,50,Male,5
@@ -132,7 +132,7 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 131,Google Pixel 5,Android,540,10.8,2923,90,1886,40,Male,5
 132,Xiaomi Mi 11,Android,320,7.2,2056,69,1226,52,Female,4
 133,Google Pixel 5,Android,176,3.6,1193,30,458,40,Female,2
-134,Samsung Galaxy S21,Android,79,1.0,313,18,139,42,Male,1
+134,Samsung Galaxy S21,Android,79,1,313,18,139,42,Male,1
 135,Xiaomi Mi 11,Android,83,1.6,303,19,285,51,Male,1
 136,iPhone 12,iOS,555,11.3,2528,90,1856,55,Female,5
 137,Samsung Galaxy S21,Android,66,1.7,375,16,216,39,Male,1
@@ -151,7 +151,7 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 150,Google Pixel 5,Android,149,3.7,873,34,459,51,Male,2
 151,iPhone 12,iOS,523,9.4,2583,92,1539,21,Male,5
 152,Samsung Galaxy S21,Android,42,1.6,315,19,207,52,Female,1
-153,Google Pixel 5,Android,120,2.0,741,38,396,56,Female,2
+153,Google Pixel 5,Android,120,2,741,38,396,56,Female,2
 154,OnePlus 9,Android,329,7.5,2277,72,1185,27,Female,4
 155,Xiaomi Mi 11,Android,68,1.5,364,10,102,31,Female,1
 156,Xiaomi Mi 11,Android,158,3.4,893,36,493,32,Male,2
@@ -162,7 +162,7 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 161,Samsung Galaxy S21,Android,64,1.6,540,19,262,35,Female,1
 162,Xiaomi Mi 11,Android,53,1.9,526,15,112,42,Male,1
 163,Google Pixel 5,Android,442,7.7,2067,69,1440,45,Male,4
-164,iPhone 12,iOS,32,2.0,469,18,139,22,Male,1
+164,iPhone 12,iOS,32,2,469,18,139,22,Male,1
 165,Xiaomi Mi 11,Android,278,4.8,1238,48,851,43,Female,3
 166,Xiaomi Mi 11,Android,540,8.4,2993,98,1540,49,Female,5
 167,Google Pixel 5,Android,595,11.3,2968,88,2366,30,Male,5
@@ -187,7 +187,7 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 186,Google Pixel 5,Android,498,10.7,2738,94,1995,42,Male,5
 187,iPhone 12,iOS,402,7.8,2014,79,1088,34,Female,4
 188,OnePlus 9,Android,75,1.1,379,15,185,37,Male,1
-189,iPhone 12,iOS,130,2.0,602,21,589,30,Female,2
+189,iPhone 12,iOS,130,2,602,21,589,30,Female,2
 190,Samsung Galaxy S21,Android,42,1.1,402,11,265,32,Female,1
 191,iPhone 12,iOS,134,2.2,917,23,423,23,Male,2
 192,Google Pixel 5,Android,79,1.9,477,13,161,24,Male,1
@@ -220,18 +220,18 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 219,iPhone 12,iOS,499,9.6,2873,81,1805,52,Female,5
 220,Xiaomi Mi 11,Android,101,3.2,603,28,417,43,Male,2
 221,OnePlus 9,Android,433,6.8,2093,75,1300,32,Male,4
-222,OnePlus 9,Android,133,2.0,1007,31,417,32,Male,2
+222,OnePlus 9,Android,133,2,1007,31,417,32,Male,2
 223,Xiaomi Mi 11,Android,351,6.1,1941,79,1290,21,Female,4
 224,Samsung Galaxy S21,Android,532,10.7,2556,83,2148,53,Female,5
 225,OnePlus 9,Android,92,2.5,690,31,563,27,Male,2
 226,Xiaomi Mi 11,Android,511,10.8,2712,97,2438,59,Female,5
-227,Xiaomi Mi 11,Android,384,7.0,2185,72,1376,59,Male,4
+227,Xiaomi Mi 11,Android,384,7,2185,72,1376,59,Male,4
 228,iPhone 12,iOS,193,5.2,1318,49,626,32,Female,3
 229,Samsung Galaxy S21,Android,132,3.8,649,25,368,41,Male,2
 230,Samsung Galaxy S21,Android,360,7.3,1946,79,1164,50,Male,4
 231,iPhone 12,iOS,159,2.3,1083,32,526,38,Male,2
 232,iPhone 12,iOS,495,8.9,2855,91,2150,31,Male,5
-233,Xiaomi Mi 11,Android,537,10.0,2720,83,1763,35,Male,5
+233,Xiaomi Mi 11,Android,537,10,2720,83,1763,35,Male,5
 234,OnePlus 9,Android,129,3.4,1059,27,580,36,Female,2
 235,iPhone 12,iOS,132,3.8,636,28,529,53,Male,2
 236,Xiaomi Mi 11,Android,37,1.4,369,18,295,19,Female,1
@@ -244,21 +244,21 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 243,OnePlus 9,Android,162,3.5,761,36,338,51,Male,2
 244,Samsung Galaxy S21,Android,451,6.5,2378,69,1341,44,Male,4
 245,OnePlus 9,Android,30,1.3,479,16,253,35,Male,1
-246,Samsung Galaxy S21,Android,202,5.0,1542,45,844,29,Male,3
+246,Samsung Galaxy S21,Android,202,5,1542,45,844,29,Male,3
 247,Google Pixel 5,Android,71,1.5,590,17,257,33,Male,1
 248,Google Pixel 5,Android,314,6.2,2205,63,1066,19,Male,4
-249,Xiaomi Mi 11,Android,168,4.0,866,22,581,50,Female,2
+249,Xiaomi Mi 11,Android,168,4,866,22,581,50,Female,2
 250,Google Pixel 5,Android,75,1.9,537,13,230,58,Female,1
 251,OnePlus 9,Android,42,1.4,324,13,272,29,Female,1
 252,OnePlus 9,Android,441,7.9,2332,78,1477,23,Female,4
 253,Google Pixel 5,Android,523,10.5,2460,99,1787,22,Male,5
 254,Xiaomi Mi 11,Android,100,2.4,982,31,478,48,Female,2
 255,OnePlus 9,Android,52,1.2,398,14,172,24,Female,1
-256,OnePlus 9,Android,397,7.0,2352,77,1101,46,Female,4
+256,OnePlus 9,Android,397,7,2352,77,1101,46,Female,4
 257,Xiaomi Mi 11,Android,424,7.7,1863,65,1116,52,Male,4
-258,Xiaomi Mi 11,Android,272,5.0,1655,45,686,19,Female,3
-259,Xiaomi Mi 11,Android,201,4.0,1791,50,914,18,Male,3
-260,Xiaomi Mi 11,Android,570,9.0,2613,98,2497,49,Female,5
+258,Xiaomi Mi 11,Android,272,5,1655,45,686,19,Female,3
+259,Xiaomi Mi 11,Android,201,4,1791,50,914,18,Male,3
+260,Xiaomi Mi 11,Android,570,9,2613,98,2497,49,Female,5
 261,Xiaomi Mi 11,Android,64,1.3,490,14,151,43,Female,1
 262,iPhone 12,iOS,334,6.6,2394,68,1227,46,Female,4
 263,iPhone 12,iOS,518,9.6,2954,93,2125,34,Female,5
@@ -286,7 +286,7 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 285,Google Pixel 5,Android,411,6.9,1820,70,1024,43,Male,4
 286,OnePlus 9,Android,534,10.8,2805,90,1538,37,Male,5
 287,Samsung Galaxy S21,Android,314,7.4,2136,64,1376,47,Female,4
-288,Xiaomi Mi 11,Android,211,4.0,1519,54,811,29,Female,3
+288,Xiaomi Mi 11,Android,211,4,1519,54,811,29,Female,3
 289,OnePlus 9,Android,121,3.7,619,36,473,47,Male,2
 290,Google Pixel 5,Android,84,1.2,415,10,146,50,Male,1
 291,OnePlus 9,Android,448,7.6,2199,66,1047,28,Male,4
@@ -301,37 +301,37 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 300,Xiaomi Mi 11,Android,122,3.3,748,35,499,59,Female,2
 301,Xiaomi Mi 11,Android,420,6.5,2113,65,1314,35,Male,4
 302,iPhone 12,iOS,267,4.4,1505,59,971,38,Female,3
-303,iPhone 12,iOS,469,6.0,2290,67,1086,34,Female,4
+303,iPhone 12,iOS,469,6,2290,67,1086,34,Female,4
 304,iPhone 12,iOS,541,11.4,2443,89,1923,34,Female,5
 305,iPhone 12,iOS,155,2.9,1117,22,322,19,Female,2
 306,OnePlus 9,Android,106,2.8,686,32,594,27,Male,2
-307,OnePlus 9,Android,243,5.0,1232,47,877,43,Male,3
+307,OnePlus 9,Android,243,5,1232,47,877,43,Male,3
 308,OnePlus 9,Android,410,7.5,2176,68,1213,45,Female,4
 309,iPhone 12,iOS,285,5.1,1226,57,666,20,Female,3
 310,OnePlus 9,Android,397,6.8,2027,66,1167,40,Male,4
 311,Samsung Galaxy S21,Android,230,4.2,1507,51,868,25,Female,3
 312,iPhone 12,iOS,341,7.2,2397,68,1055,32,Female,4
 313,Google Pixel 5,Android,132,2.9,1054,32,563,20,Male,2
-314,Xiaomi Mi 11,Android,130,3.0,820,21,308,49,Female,2
+314,Xiaomi Mi 11,Android,130,3,820,21,308,49,Female,2
 315,iPhone 12,iOS,281,4.9,1566,59,632,29,Male,3
-316,OnePlus 9,Android,74,2.0,320,11,103,55,Female,1
+316,OnePlus 9,Android,74,2,320,11,103,55,Female,1
 317,OnePlus 9,Android,299,4.3,1737,43,953,42,Female,3
 318,Google Pixel 5,Android,116,2.2,827,29,434,28,Female,2
 319,OnePlus 9,Android,408,6.6,2026,63,1076,47,Female,4
 320,Google Pixel 5,Android,508,11.3,2590,81,2481,51,Male,5
 321,iPhone 12,iOS,227,4.4,1275,56,984,22,Female,3
-322,Google Pixel 5,Android,274,6.0,1489,56,666,57,Female,3
+322,Google Pixel 5,Android,274,6,1489,56,666,57,Female,3
 323,Google Pixel 5,Android,347,6.3,2001,61,1456,21,Female,4
 324,Xiaomi Mi 11,Android,76,1.3,490,14,156,31,Female,1
 325,iPhone 12,iOS,445,7.5,2007,78,1115,23,Male,4
 326,OnePlus 9,Android,203,4.3,1554,54,638,25,Female,3
-327,Samsung Galaxy S21,Android,199,6.0,1707,57,881,55,Male,3
-328,OnePlus 9,Android,48,2.0,574,18,127,24,Female,1
+327,Samsung Galaxy S21,Android,199,6,1707,57,881,55,Male,3
+328,OnePlus 9,Android,48,2,574,18,127,24,Female,1
 329,OnePlus 9,Android,88,1.6,420,12,274,31,Female,1
 330,iPhone 12,iOS,541,8.3,2865,89,1820,42,Female,5
 331,Google Pixel 5,Android,233,4.6,1534,49,796,21,Female,3
 332,iPhone 12,iOS,176,3.8,727,36,362,47,Female,2
-333,OnePlus 9,Android,191,6.0,1762,45,904,54,Male,3
+333,OnePlus 9,Android,191,6,1762,45,904,54,Male,3
 334,Google Pixel 5,Android,461,7.5,2001,69,1324,34,Female,4
 335,Samsung Galaxy S21,Android,37,1.5,375,18,246,46,Female,1
 336,OnePlus 9,Android,531,9.8,2905,99,1632,45,Female,5
@@ -339,10 +339,10 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 338,Samsung Galaxy S21,Android,30,1.3,561,15,252,34,Male,1
 339,iPhone 12,iOS,306,6.1,2267,70,1449,46,Male,4
 340,iPhone 12,iOS,64,1.2,590,13,155,30,Male,1
-341,iPhone 12,iOS,75,1.0,435,13,223,43,Male,1
+341,iPhone 12,iOS,75,1,435,13,223,43,Male,1
 342,iPhone 12,iOS,597,10.3,2718,90,1863,26,Female,5
 343,iPhone 12,iOS,529,10.5,2971,87,1683,56,Male,5
-344,iPhone 12,iOS,290,6.0,1533,54,645,57,Female,3
+344,iPhone 12,iOS,290,6,1533,54,645,57,Female,3
 345,iPhone 12,iOS,256,5.8,1309,52,840,43,Male,3
 346,iPhone 12,iOS,308,7.7,1974,73,1431,37,Female,4
 347,OnePlus 9,Android,156,3.3,1020,38,447,57,Female,2
@@ -357,7 +357,7 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 356,Samsung Galaxy S21,Android,30,1.9,574,19,287,45,Male,1
 357,iPhone 12,iOS,291,4.1,1326,51,905,55,Female,3
 358,iPhone 12,iOS,488,9.5,2840,92,1986,48,Female,5
-359,Google Pixel 5,Android,74,2.0,366,13,253,44,Female,1
+359,Google Pixel 5,Android,74,2,366,13,253,44,Female,1
 360,Samsung Galaxy S21,Android,230,4.6,1325,55,845,54,Female,3
 361,Samsung Galaxy S21,Android,517,11.8,2435,86,2208,26,Male,5
 362,OnePlus 9,Android,557,10.4,2900,97,1609,22,Male,5
@@ -376,16 +376,16 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 375,OnePlus 9,Android,69,1.3,434,12,164,42,Male,1
 376,OnePlus 9,Android,44,1.1,531,17,232,26,Male,1
 377,iPhone 12,iOS,65,1.7,490,17,122,51,Female,1
-378,Google Pixel 5,Android,458,6.0,1875,63,1072,31,Female,4
+378,Google Pixel 5,Android,458,6,1875,63,1072,31,Female,4
 379,Samsung Galaxy S21,Android,525,10.8,2445,99,1623,57,Male,5
-380,OnePlus 9,Android,106,3.0,922,22,313,51,Male,2
+380,OnePlus 9,Android,106,3,922,22,313,51,Male,2
 381,iPhone 12,iOS,188,4.6,1767,47,653,34,Male,3
 382,iPhone 12,iOS,493,10.4,2453,99,1813,39,Male,5
 383,OnePlus 9,Android,84,1.5,373,19,299,37,Female,1
 384,OnePlus 9,Android,104,2.9,653,35,322,30,Male,2
-385,Samsung Galaxy S21,Android,102,3.0,890,38,548,28,Male,2
+385,Samsung Galaxy S21,Android,102,3,890,38,548,28,Male,2
 386,iPhone 12,iOS,349,6.6,2041,78,1096,40,Female,4
-387,OnePlus 9,Android,98,2.0,925,32,457,28,Male,2
+387,OnePlus 9,Android,98,2,925,32,457,28,Male,2
 388,Samsung Galaxy S21,Android,72,1.3,461,13,199,32,Male,1
 389,Xiaomi Mi 11,Android,563,11.6,2968,92,2191,34,Female,5
 390,Xiaomi Mi 11,Android,119,2.8,775,31,313,50,Female,2
@@ -412,8 +412,8 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 411,Samsung Galaxy S21,Android,501,11.8,2790,86,2074,31,Female,5
 412,Xiaomi Mi 11,Android,575,8.2,2918,88,1928,50,Male,5
 413,OnePlus 9,Android,257,5.1,1692,46,769,52,Female,3
-414,iPhone 12,iOS,270,5.0,1532,51,957,35,Male,3
-415,Google Pixel 5,Android,116,2.0,1171,22,573,33,Female,2
+414,iPhone 12,iOS,270,5,1532,51,957,35,Male,3
+415,Google Pixel 5,Android,116,2,1171,22,573,33,Female,2
 416,iPhone 12,iOS,98,2.3,608,24,394,56,Male,2
 417,Xiaomi Mi 11,Android,264,5.1,1293,52,737,27,Female,3
 418,Samsung Galaxy S21,Android,572,11.7,2655,91,2481,57,Female,5
@@ -423,7 +423,7 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 422,iPhone 12,iOS,168,3.2,716,38,414,43,Male,2
 423,iPhone 12,iOS,416,6.1,2115,71,1041,22,Female,4
 424,Xiaomi Mi 11,Android,46,1.1,536,18,167,28,Female,1
-425,OnePlus 9,Android,201,5.0,1482,59,709,24,Male,3
+425,OnePlus 9,Android,201,5,1482,59,709,24,Male,3
 426,Samsung Galaxy S21,Android,130,2.8,1062,24,579,37,Male,2
 427,OnePlus 9,Android,98,2.4,747,36,403,44,Female,2
 428,OnePlus 9,Android,105,3.8,967,28,489,51,Male,2
@@ -432,22 +432,22 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 431,iPhone 12,iOS,266,5.5,1238,59,839,22,Male,3
 432,iPhone 12,iOS,140,3.8,1137,36,506,53,Male,2
 433,Google Pixel 5,Android,534,10.4,2672,90,1702,51,Male,5
-434,OnePlus 9,Android,46,2.0,309,15,116,42,Male,1
+434,OnePlus 9,Android,46,2,309,15,116,42,Male,1
 435,iPhone 12,iOS,581,8.4,2591,99,2304,58,Male,5
 436,Xiaomi Mi 11,Android,105,3.4,798,21,467,34,Female,2
 437,OnePlus 9,Android,221,4.4,1341,46,862,20,Male,3
 438,iPhone 12,iOS,41,1.7,408,16,291,34,Male,1
-439,OnePlus 9,Android,105,3.0,728,24,343,52,Female,2
+439,OnePlus 9,Android,105,3,728,24,343,52,Female,2
 440,Google Pixel 5,Android,123,3.9,915,39,468,18,Male,2
 441,Google Pixel 5,Android,260,5.7,1725,56,920,36,Female,3
 442,Samsung Galaxy S21,Android,223,5.7,1295,44,751,39,Male,3
 443,Google Pixel 5,Android,66,1.1,505,17,218,33,Male,1
-444,iPhone 12,iOS,231,4.0,1664,48,724,29,Female,3
+444,iPhone 12,iOS,231,4,1664,48,724,29,Female,3
 445,iPhone 12,iOS,555,8.8,2540,97,2402,22,Male,5
 446,Samsung Galaxy S21,Android,378,7.2,1859,61,1318,58,Male,4
 447,OnePlus 9,Android,546,8.8,2852,81,1641,24,Male,5
 448,Samsung Galaxy S21,Android,234,5.2,1604,58,919,58,Male,3
-449,Samsung Galaxy S21,Android,152,3.0,617,22,306,22,Female,2
+449,Samsung Galaxy S21,Android,152,3,617,22,306,22,Female,2
 450,Google Pixel 5,Android,34,1.2,518,10,170,20,Female,1
 451,Samsung Galaxy S21,Android,179,3.5,1114,30,466,56,Male,2
 452,OnePlus 9,Android,591,11.8,2953,92,1903,52,Male,5
@@ -457,22 +457,22 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 456,iPhone 12,iOS,74,1.6,436,13,182,27,Female,1
 457,iPhone 12,iOS,74,1.6,587,15,275,27,Female,1
 458,OnePlus 9,Android,234,4.7,1707,55,871,46,Male,3
-459,iPhone 12,iOS,56,1.0,547,10,142,58,Female,1
+459,iPhone 12,iOS,56,1,547,10,142,58,Female,1
 460,OnePlus 9,Android,174,2.4,639,37,545,50,Male,2
-461,Samsung Galaxy S21,Android,523,9.0,2696,91,1561,20,Female,5
+461,Samsung Galaxy S21,Android,523,9,2696,91,1561,20,Female,5
 462,Samsung Galaxy S21,Android,123,3.3,938,36,438,55,Male,2
 463,Samsung Galaxy S21,Android,216,5.9,1789,54,987,55,Male,3
 464,iPhone 12,iOS,290,4.6,1694,50,809,23,Male,3
 465,Xiaomi Mi 11,Android,68,1.3,583,10,281,26,Female,1
 466,OnePlus 9,Android,265,4.8,1770,51,723,55,Female,3
 467,Samsung Galaxy S21,Android,414,7.3,2349,75,1092,51,Male,4
-468,Google Pixel 5,Android,238,4.0,1414,47,661,41,Female,3
+468,Google Pixel 5,Android,238,4,1414,47,661,41,Female,3
 469,Xiaomi Mi 11,Android,429,7.5,1921,61,1102,46,Male,4
 470,Xiaomi Mi 11,Android,39,1.9,541,16,294,37,Male,1
 471,Samsung Galaxy S21,Android,248,4.6,1396,52,883,40,Male,3
 472,Xiaomi Mi 11,Android,541,9.4,2452,93,1811,53,Female,5
-473,Xiaomi Mi 11,Android,139,3.0,697,37,513,26,Female,2
-474,iPhone 12,iOS,289,5.0,1625,45,687,29,Male,3
+473,Xiaomi Mi 11,Android,139,3,697,37,513,26,Female,2
+474,iPhone 12,iOS,289,5,1625,45,687,29,Male,3
 475,Xiaomi Mi 11,Android,210,4.9,1657,55,765,49,Female,3
 476,Samsung Galaxy S21,Android,412,6.2,2201,68,1085,54,Female,4
 477,Google Pixel 5,Android,318,6.6,2089,77,1126,49,Female,4
@@ -483,7 +483,7 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 482,Samsung Galaxy S21,Android,528,10.4,2717,87,2140,34,Male,5
 483,iPhone 12,iOS,549,11.1,2851,87,1814,56,Male,5
 484,Xiaomi Mi 11,Android,78,1.6,470,18,230,49,Female,1
-485,iPhone 12,iOS,444,6.0,1873,61,1093,39,Female,4
+485,iPhone 12,iOS,444,6,1873,61,1093,39,Female,4
 486,Xiaomi Mi 11,Android,80,1.1,417,18,298,36,Male,1
 487,iPhone 12,iOS,131,3.8,739,34,330,57,Female,2
 488,iPhone 12,iOS,228,4.4,1734,46,804,57,Female,3
@@ -506,9 +506,9 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 505,Google Pixel 5,Android,493,8.5,2859,99,2450,47,Male,5
 506,Samsung Galaxy S21,Android,348,6.6,2398,66,1415,49,Female,4
 507,Xiaomi Mi 11,Android,238,5.1,1408,45,941,27,Male,3
-508,Xiaomi Mi 11,Android,33,2.0,318,11,173,42,Female,1
+508,Xiaomi Mi 11,Android,33,2,318,11,173,42,Female,1
 509,Google Pixel 5,Android,267,5.9,1740,45,791,22,Male,3
-510,iPhone 12,iOS,492,10.0,2513,90,1968,31,Male,5
+510,iPhone 12,iOS,492,10,2513,90,1968,31,Male,5
 511,Google Pixel 5,Android,241,5.3,1767,58,976,38,Female,3
 512,Samsung Galaxy S21,Android,567,10.8,2911,89,1682,39,Male,5
 513,Samsung Galaxy S21,Android,36,1.6,442,17,249,34,Male,1
@@ -527,7 +527,7 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 526,Samsung Galaxy S21,Android,224,4.5,1646,57,665,59,Male,3
 527,Google Pixel 5,Android,99,2.4,689,36,318,29,Female,2
 528,iPhone 12,iOS,44,1.2,466,10,131,57,Female,1
-529,Google Pixel 5,Android,175,3.0,801,32,338,24,Male,2
+529,Google Pixel 5,Android,175,3,801,32,338,24,Male,2
 530,Google Pixel 5,Android,228,4.8,1639,47,796,42,Female,3
 531,Xiaomi Mi 11,Android,589,11.8,2629,86,2479,43,Female,5
 532,OnePlus 9,Android,339,7.9,1987,66,1191,47,Male,4
@@ -544,11 +544,11 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 543,Google Pixel 5,Android,242,5.4,1307,48,642,28,Male,3
 544,Samsung Galaxy S21,Android,275,5.5,1616,48,656,55,Male,3
 545,Google Pixel 5,Android,544,9.7,2633,97,1727,28,Female,5
-546,OnePlus 9,Android,50,2.0,362,17,182,34,Female,1
+546,OnePlus 9,Android,50,2,362,17,182,34,Female,1
 547,OnePlus 9,Android,236,4.6,1750,45,971,21,Female,3
 548,iPhone 12,iOS,139,2.6,658,33,358,58,Female,2
 549,Google Pixel 5,Android,383,6.6,2155,74,1360,45,Male,4
-550,Samsung Galaxy S21,Android,172,4.0,1047,32,508,21,Female,2
+550,Samsung Galaxy S21,Android,172,4,1047,32,508,21,Female,2
 551,Xiaomi Mi 11,Android,455,6.2,1984,72,1287,42,Male,4
 552,Samsung Galaxy S21,Android,157,2.5,1110,30,373,37,Female,2
 553,iPhone 12,iOS,173,3.8,605,23,583,32,Male,2
@@ -577,9 +577,9 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 576,Samsung Galaxy S21,Android,94,3.5,606,30,446,49,Male,2
 577,Google Pixel 5,Android,554,10.3,2776,83,1606,34,Female,5
 578,iPhone 12,iOS,381,7.5,2216,66,1291,37,Female,4
-579,OnePlus 9,Android,257,6.0,1715,49,916,40,Female,3
+579,OnePlus 9,Android,257,6,1715,49,916,40,Female,3
 580,Samsung Galaxy S21,Android,47,1.1,532,18,122,36,Male,1
-581,iPhone 12,iOS,527,10.0,2430,82,1737,27,Female,5
+581,iPhone 12,iOS,527,10,2430,82,1737,27,Female,5
 582,Samsung Galaxy S21,Android,148,2.7,625,34,416,27,Male,2
 583,iPhone 12,iOS,191,5.7,1414,53,991,19,Female,3
 584,Google Pixel 5,Android,71,1.9,571,10,117,43,Female,1
@@ -597,35 +597,35 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 596,OnePlus 9,Android,512,10.5,2538,82,1694,41,Male,5
 597,Xiaomi Mi 11,Android,511,10.8,2529,91,2387,21,Male,5
 598,OnePlus 9,Android,140,2.5,825,31,347,59,Male,2
-599,Samsung Galaxy S21,Android,114,3.0,1131,31,596,28,Male,2
+599,Samsung Galaxy S21,Android,114,3,1131,31,596,28,Male,2
 600,Samsung Galaxy S21,Android,192,4.3,1382,42,905,47,Female,3
-601,iPhone 12,iOS,325,6.0,2244,70,1296,30,Female,4
+601,iPhone 12,iOS,325,6,2244,70,1296,30,Female,4
 602,OnePlus 9,Android,83,1.2,545,15,284,44,Male,1
-603,OnePlus 9,Android,122,3.0,922,32,373,43,Male,2
+603,OnePlus 9,Android,122,3,922,32,373,43,Male,2
 604,OnePlus 9,Android,138,2.1,660,22,424,41,Female,2
 605,OnePlus 9,Android,182,5.3,1278,42,885,54,Female,3
-606,OnePlus 9,Android,425,6.0,1928,72,1150,53,Female,4
+606,OnePlus 9,Android,425,6,1928,72,1150,53,Female,4
 607,OnePlus 9,Android,580,10.4,2496,81,2441,37,Female,5
-608,Xiaomi Mi 11,Android,203,4.0,1323,56,787,21,Male,3
+608,Xiaomi Mi 11,Android,203,4,1323,56,787,21,Male,3
 609,Xiaomi Mi 11,Android,258,4.9,1596,56,937,40,Female,3
 610,iPhone 12,iOS,551,8.5,2927,92,1901,51,Male,5
 611,iPhone 12,iOS,507,9.6,2606,95,1543,48,Male,5
 612,Xiaomi Mi 11,Android,57,1.3,489,16,131,37,Male,1
 613,Xiaomi Mi 11,Android,553,10.2,2911,82,2441,44,Male,5
 614,Google Pixel 5,Android,49,1.1,395,16,153,46,Female,1
-615,Samsung Galaxy S21,Android,106,4.0,1158,23,493,18,Male,2
+615,Samsung Galaxy S21,Android,106,4,1158,23,493,18,Male,2
 616,Google Pixel 5,Android,119,3.7,608,36,461,52,Male,2
 617,OnePlus 9,Android,288,5.4,1476,49,767,36,Female,3
 618,Google Pixel 5,Android,225,5.6,1388,55,965,36,Female,3
-619,OnePlus 9,Android,342,7.0,1826,71,1077,26,Female,4
+619,OnePlus 9,Android,342,7,1826,71,1077,26,Female,4
 620,Samsung Galaxy S21,Android,292,4.2,1407,54,867,59,Male,3
-621,iPhone 12,iOS,218,5.0,1475,46,972,59,Female,3
+621,iPhone 12,iOS,218,5,1475,46,972,59,Female,3
 622,Google Pixel 5,Android,64,1.8,351,15,274,56,Male,1
 623,Xiaomi Mi 11,Android,453,7.4,2363,65,1046,41,Female,4
 624,OnePlus 9,Android,42,1.8,417,15,284,21,Male,1
 625,Samsung Galaxy S21,Android,36,1.5,310,15,272,45,Male,1
 626,OnePlus 9,Android,55,1.8,328,12,196,31,Female,1
-627,iPhone 12,iOS,210,5.0,1614,53,679,55,Female,3
+627,iPhone 12,iOS,210,5,1614,53,679,55,Female,3
 628,iPhone 12,iOS,227,5.2,1446,46,920,59,Male,3
 629,Xiaomi Mi 11,Android,47,1.2,437,18,234,55,Male,1
 630,iPhone 12,iOS,461,6.3,1988,62,1004,21,Male,4
@@ -649,7 +649,7 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 648,iPhone 12,iOS,66,1.5,565,17,283,42,Female,1
 649,iPhone 12,iOS,389,6.3,2294,76,1334,53,Male,4
 650,Xiaomi Mi 11,Android,186,5.4,1627,58,790,31,Female,3
-651,Google Pixel 5,Android,149,2.0,1041,39,356,49,Male,2
+651,Google Pixel 5,Android,149,2,1041,39,356,49,Male,2
 652,iPhone 12,iOS,69,1.7,519,10,167,51,Female,1
 653,Xiaomi Mi 11,Android,206,5.2,1632,47,694,30,Male,3
 654,Samsung Galaxy S21,Android,49,1.2,365,19,144,29,Male,1
@@ -683,14 +683,14 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 682,Xiaomi Mi 11,Android,380,7.6,2354,77,1191,30,Male,4
 683,Xiaomi Mi 11,Android,190,5.5,1718,58,815,42,Male,3
 684,Samsung Galaxy S21,Android,75,1.6,325,12,225,45,Male,1
-685,Google Pixel 5,Android,218,4.0,1221,47,822,25,Male,3
+685,Google Pixel 5,Android,218,4,1221,47,822,25,Male,3
 686,Xiaomi Mi 11,Android,412,6.6,1859,67,1393,18,Male,4
 687,Google Pixel 5,Android,335,7.7,2037,68,1007,18,Male,4
 688,OnePlus 9,Android,387,6.3,2098,61,1178,54,Male,4
 689,Google Pixel 5,Android,261,4.9,1589,56,824,52,Female,3
 690,Samsung Galaxy S21,Android,541,9.5,2424,98,1550,32,Male,5
 691,Google Pixel 5,Android,195,5.7,1447,48,679,30,Male,3
-692,iPhone 12,iOS,178,4.0,856,37,569,51,Female,2
+692,iPhone 12,iOS,178,4,856,37,569,51,Female,2
 693,Xiaomi Mi 11,Android,378,6.7,1898,78,1455,48,Female,4
 694,Xiaomi Mi 11,Android,505,8.6,2792,82,1709,31,Male,5
 695,Samsung Galaxy S21,Android,564,9.7,2422,83,1985,34,Female,5
