@@ -1,4 +1,4 @@
-'''This script Fetches the Lates entry from the database and makes Predictions with it'''
+'''This script Fetches the Latest entry from the database and makes Predictions with it'''
 
 import requests
 import joblib
