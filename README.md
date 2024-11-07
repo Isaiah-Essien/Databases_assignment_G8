@@ -15,7 +15,7 @@ Create an end-to-end system that can:
 
 ### Task 1: Database Schema Normalization
 **Team Member:** Anissa  
-**Problem:** Design a normalized database schema for unstructured mobile device usage data
+**Problem:** Design a normalized database schema for unstructured Software Company Data
 
 **Approach:**
 1. Analyzed raw dataset structure
@@ -31,7 +31,10 @@ Create an end-to-end system that can:
 
 ### Task 2: Database Implementation
 **Team Members:** Johnson  
-**Problem:** Implement dual database system using PostgreSQL and MongoDB
+**Problem:** Implement dual database system using PostgreSQL and MongoDB for  mobile device usage data
+
+#### Dataset Used:
+[Kaggle](https://www.kaggle.com/datasets/valakhorasani/mobile-device-usage-and-user-behavior-dataset)
 
 **Approach:**
 1. PostgreSQL Implementation:
@@ -68,6 +71,10 @@ Create an end-to-end system that can:
 3. Added data validation
 4. Implemented error handling
 5. Created API documentation
+
+#### Play around: with the Endpoints:
+
+[CRUD Endpoints](https://crudendpoints.onrender.com/docs)
 
 **Key Deliverables:**
 - FastAPI application
