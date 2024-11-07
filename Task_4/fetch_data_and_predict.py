@@ -5,7 +5,6 @@ import joblib
 import pandas as pd
 import os
 
-# Define the API endpoint for fetching the latest user entry
 api_url = "https://crudendpoints.onrender.com/users/latest"
 
 # Fetch the latest entry
@@ -19,9 +18,7 @@ except requests.exceptions.RequestException as e:
 
 # Continue only if latest_entry is available
 if latest_entry:
-    # Print the fetched latest entry
     print(f"Fetched Latest Entry: \n {latest_entry}")
-
 
     # Construct the absolute path to the model file
     script_dir = os.path.dirname(os.path.abspath(__file__))
